@@ -11,6 +11,7 @@
   <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
   <a href="#running-locally"><strong>Running locally</strong></a> ·
 </p>
+
 <br/>
 <img alt="Screenshot" src="public/screenshot.png">
 
@@ -32,7 +33,9 @@ This template ships with OpenAI `gpt-4-vision-preview` as the default. Once [Ver
 
 ## Deploy Your Own
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+You can find a test deployment at [https://chat.marcusschiesser.de](https://chat.marcusschiesser.de). Note that the chat is not working as the OpenAI key has been disabled to save costs.
+
+Using your own [OpenAI key](https://platform.openai.com/api-keys), you can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmarcusschiesser%2Fai-chatbot&env=OPENAI_API_KEY)
 
