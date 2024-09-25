@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GPT4 Vision Chatbot Demo",
-  description: "A chatbot template for GPT4 Vision built with ui.marcusschiesser.de and Next.js.",
+  title: "Seek AI",
+  description: "",
 };
 
 export default function RootLayout({
