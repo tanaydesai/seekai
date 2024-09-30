@@ -19,27 +19,27 @@ export default function Home() {
 					<div className="mt-2 text-[16px] overflow-auto  flex items-center w-full gap-4">
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p1} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">linear-algebra.pdf</div>
 						</div>
 
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p2} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">machine-learning.pdf</div>
 						</div>
 
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p3} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">backpropagation.pdf</div>
 						</div>
 
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p4} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">neural-networks.pdf</div>
 						</div>
 
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p5} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">adam.pdf</div>
 						</div>
 					</div>
 				</div>
@@ -47,10 +47,10 @@ export default function Home() {
 				<div className="mt-5 bg-white/80 p-3 rounded-lg">
 					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Citations</div>
 					<div className="flex w-full gap-3 mt-3 items-center overflow-auto">
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2024)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Kalpan et al. (2023)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Hubberman et al. (2021)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2022)</div>
 
 					</div>
 				</div>
@@ -59,10 +59,10 @@ export default function Home() {
 					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Quick Overview</div>
 					<div className="mt-3 text-[14px]">
 					Transformative Technology: AI is a leading technology of the 21st century, impacting sectors like healthcare, finance, and transportation.
-<br /><br />Research Methodology: The study combines literature reviews, case studies, and expert interviews to assess AI's applications and implications.
+<br /><br />Research Methodology: The study combines literature reviews, case studies, and expert interviews to assess AIs applications and implications.
 <br /><br />Sectoral Applications: Key uses of AI include diagnostic tools in healthcare, automated trading in finance, and autonomous vehicles in transportation.
 <br /><br />Ethical Challenges: The adoption of AI raises significant ethical concerns, including privacy issues, job displacement, and the need for unbiased systems.
-<br /><br />Future Direction: Ongoing research is essential to understand AI's long-term societal implications and establish frameworks for its ethical use.
+<br /><br />Future Direction: Ongoing research is essential to understand AIs long-term societal implications and establish frameworks for its ethical use.
 					</div>
 				</div>
 			</div>
