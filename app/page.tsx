@@ -1,90 +1,70 @@
 import ChatSection from "./components/chat-section";
+import { Paperclip, SparklesIcon } from "lucide-react";
+import p1 from "@/public/images/p1.png"
+import p2 from "@/public/images/p2.png"
+import p3 from "@/public/images/p3.png"
+import p4 from "@/public/images/p4.png"
+import p5 from "@/public/images/p5.png"
+import Image from "next/image";
 
 export default function Home() {
 	return (
-		<main className="flex w-full h-full absolute items-start gap-5 px-5 pt-10 bg-gradient-to-bl from-slate-300 to-blue-50">
+		<main className="flex w-full h-full absolute items-start gap-5 px-5 pt-10 bg-gradient-to-bl overflow-x-hidden from-slate-300 to-blue-50">
 			<h1 className="font-bold text-4xl absolute top-5 w-full text-center">Seek AI</h1>
 			<div className="w-1/2 mt-10"><ChatSection /></div>
-			<div className="w-1/2   mt-10 p-10 h-[685px] overflow-auto bg-white">
-				<div  className="text-lg relative">
-				<title>Research Paper Example</title>
-				<article className="font-serif">
-				<header className="text-center mb-8">
-					<h1 className="text-3xl font-bold mb-2">The Impact of Artificial Intelligence on Modern Society</h1>
-					<p className="text-sm mb-2">John Doe, Jane Smith</p>
-					<p className="text-sm italic">Department of Computer Science, Example University</p>
-				</header>
+			<div className="w-1/2  mt-10 h-[685px] overflow-auto">
+				<div className="bg-white/80 p-3 text-[16px] rounded-lg flex items-center w-full gap-2 h-[60px]"><Paperclip size={15}/>attention-is-all-you-need-models.pdf</div>
+				<div className="mt-5 bg-white/80 p-3 rounded-lg">
+					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Similar Papers</div>
+					<div className="mt-2 text-[16px] overflow-auto  flex items-center w-full gap-4">
+						<div className="relative overflow-auto shrink-0">
+							<Image src={p1} alt="image" className="w-[200px] h-auto rounded-md"/>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+						</div>
 
-				<section className="mb-8">
-					<h2 className="text-xl font-bold mb-2">Abstract</h2>
-					<p className="text-justify">
-					This paper explores the profound impact of Artificial Intelligence (AI) on various aspects of modern society. 
-					We analyze the current state of AI technology, its applications across different sectors, and the potential 
-					future developments. Our research highlights both the benefits and challenges associated with the widespread 
-					adoption of AI, including ethical considerations and socioeconomic implications.
-					</p>
-				</section>
+						<div className="relative overflow-auto shrink-0">
+							<Image src={p2} alt="image" className="w-[200px] h-auto rounded-md"/>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+						</div>
 
-				<section className="mb-8">
-					<h2 className="text-xl font-bold mb-2">1. Introduction</h2>
-					<p className="text-justify mb-4">
-					Artificial Intelligence has emerged as one of the most transformative technologies of the 21st century. 
-					Its ability to process vast amounts of data, recognize patterns, and make decisions has led to applications 
-					in fields ranging from healthcare to finance, transportation to entertainment.
-					</p>
-					<p className="text-justify">
-					This paper aims to provide a comprehensive overview of AI&apos;s impact on modern society, examining both its 
-					current applications and potential future developments. We will explore the technical foundations of AI, 
-					its real-world implementations, and the broader implications for individuals, businesses, and governments.
-					</p>
-				</section>
+						<div className="relative overflow-auto shrink-0">
+							<Image src={p3} alt="image" className="w-[200px] h-auto rounded-md"/>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+						</div>
 
-				<section className="mb-8">
-					<h2 className="text-xl font-bold mb-2">2. Methodology</h2>
-					<p className="text-justify">
-					Our research methodology combines a thorough literature review with case studies of AI applications in 
-					various sectors. We analyzed peer-reviewed articles, industry reports, and conducted interviews with AI 
-					experts to gather diverse perspectives on the subject.
-					</p>
-				</section>
+						<div className="relative overflow-auto shrink-0">
+							<Image src={p4} alt="image" className="w-[200px] h-auto rounded-md"/>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+						</div>
 
-				<section className="mb-8">
-					<h2 className="text-xl font-bold mb-2">3. Results and Discussion</h2>
-					<p className="text-justify mb-4">
-					Our findings indicate that AI has had a significant impact across multiple sectors:
-					</p>
-					<ul className="list-disc list-inside mb-4">
-					<li>Healthcare: AI-powered diagnostic tools and personalized treatment plans</li>
-					<li>Finance: Automated trading systems and fraud detection algorithms</li>
-					<li>Transportation: Development of autonomous vehicles and traffic optimization</li>
-					<li>Education: Personalized learning experiences and automated grading systems</li>
-					</ul>
-					<p className="text-justify">
-					However, the adoption of AI also raises important ethical considerations, including privacy concerns, 
-					potential job displacement, and the need for transparent and unbiased AI systems.
-					</p>
-				</section>
+						<div className="relative overflow-auto shrink-0">
+							<Image src={p5} alt="image" className="w-[200px] h-auto rounded-md"/>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">ai-models-are-cool</div>
+						</div>
+					</div>
+				</div>
 
-				<section className="mb-8">
-					<h2 className="text-xl font-bold mb-2">4. Conclusion</h2>
-					<p className="text-justify">
-					AI continues to reshape modern society in profound ways. While its benefits are numerous, addressing the 
-					challenges associated with its implementation is crucial for ensuring that AI technologies are developed 
-					and used responsibly. Further research is needed to fully understand the long-term implications of AI on 
-					society and to develop frameworks for its ethical use.
-					</p>
-				</section>
+				<div className="mt-5 bg-white/80 p-3 rounded-lg">
+					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Citations</div>
+					<div className="flex w-full gap-3 mt-3 items-center overflow-auto">
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
+						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2021)</div>
 
-				<section>
-					<h2 className="text-xl font-bold mb-2">References</h2>
-					<ul className="list-decimal list-inside text-sm">
-					<li>Smith, J. (2022). &quot;The Evolution of Artificial Intelligence.&quot; AI Journal, 15(2), 112-128.</li>
-					<li>Brown, A., et al. (2023). &quot;Ethical Considerations in AI Development.&quot; Tech Ethics Review, 8(4), 78-95.</li>
-					<li>Lee, K. (2021). &quot;AI in Healthcare: Opportunities and Challenges.&quot; Medical AI, 10(1), 45-60.</li>
-					</ul>
-				</section>
-				</article>
-			</div>
+					</div>
+				</div>
+
+				<div className="mt-5 bg-white/80 p-3 rounded-lg">
+					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Quick Overview</div>
+					<div className="mt-3 text-[14px]">
+					Transformative Technology: AI is a leading technology of the 21st century, impacting sectors like healthcare, finance, and transportation.
+<br /><br />Research Methodology: The study combines literature reviews, case studies, and expert interviews to assess AI's applications and implications.
+<br /><br />Sectoral Applications: Key uses of AI include diagnostic tools in healthcare, automated trading in finance, and autonomous vehicles in transportation.
+<br /><br />Ethical Challenges: The adoption of AI raises significant ethical concerns, including privacy issues, job displacement, and the need for unbiased systems.
+<br /><br />Future Direction: Ongoing research is essential to understand AI's long-term societal implications and establish frameworks for its ethical use.
+					</div>
+				</div>
 			</div>
 	</main>
 	);
