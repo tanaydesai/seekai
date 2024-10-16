@@ -58,7 +58,7 @@ export default function Home() {
 				<div className="mt-5 bg-white/80 p-3 rounded-lg">
 					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Quick Overview</div>
 					<div className="mt-3 text-[14px]">
-					Overview of "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?"
+					Overview of TinyStories: How Small Can Language Models Be and Still Speak Coherent English?
 					<br/><br/>
 					Authors: Ronen Eldan and Yuanzhi Li, Microsoft Research.
 					<br/><br/>
