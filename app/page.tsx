@@ -6,25 +6,26 @@ import p3 from "@/public/images/p3.png"
 import p4 from "@/public/images/p4.png"
 import p5 from "@/public/images/p5.png"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	return (
 		<main className="flex w-full h-full absolute items-start gap-5 px-5 pt-10 bg-gradient-to-bl overflow-x-hidden from-slate-300 to-blue-50">
-			<h1 className="font-bold text-4xl absolute top-5 w-full text-center">Seek AI</h1>
+			<h1 className="font-bold text-xl font-mono bg-white/80 absolute top-0 left-0 w-full text-left px-5 py-2">Seek AI, your AI Research Assistant.</h1>
 			<div className="w-1/2 mt-10"><ChatSection /></div>
-			<div className="w-1/2  mt-10 h-[685px] overflow-auto">
-				<div className="bg-white/80 p-3 text-[16px] rounded-lg flex items-center w-full gap-2 h-[60px]"><Paperclip size={15}/>attention-is-all-you-need-models.pdf</div>
+			<div className="w-1/2  mt-10 h-[650px] rounded-lg overflow-auto">
+				<div className="bg-white/80 p-3 text-[16px] rounded-lg flex items-center w-full gap-2 h-[60px]"><Paperclip size={15}/>tinystories-How Small-Can-Language-Models-Be-and-Still-Speak.pdf</div>
 				<div className="mt-5 bg-white/80 p-3 rounded-lg">
 					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Similar Papers</div>
 					<div className="mt-2 text-[16px] overflow-auto  flex items-center w-full gap-4">
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p1} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">linear-algebra.pdf</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">Scaling Laws for Neural Language Models.pdf</div>
 						</div>
 
 						<div className="relative overflow-auto shrink-0">
 							<Image src={p2} alt="image" className="w-[200px] h-auto rounded-md"/>
-							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">machine-learning.pdf</div>
+							<div className="bg-slate-200 mt-3 px-2 rounded-md h-auto whitespace-nowrap text-center overflow-auto truncate text-[13px] max-w-[150px] mx-auto">Attention Is All You Need.pdf</div>
 						</div>
 
 						<div className="relative overflow-auto shrink-0">
@@ -45,24 +46,37 @@ export default function Home() {
 				</div>
 
 				<div className="mt-5 bg-white/80 p-3 rounded-lg">
-					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Citations</div>
-					<div className="flex w-full gap-3 mt-3 items-center overflow-auto">
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2024)</div>
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Kalpan et al. (2023)</div>
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Hubberman et al. (2021)</div>
-						<div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2022)</div>
-
+					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px] cursor-default"><SparklesIcon size={20}/>Citations</div>
+					<div className="flex w-full gap-3 mt-3 items-center overflow-auto cursor-default">
+						<Link href="https://arxiv.org/pdf/2001.08361.pdf#page1"><div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2024)</div></Link>
+						<Link href="https://arxiv.org/pdf/2001.08361.pdf#page1"><div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Kalpan et al. (2023)</div></Link>
+						<Link href="https://arxiv.org/pdf/2001.08361.pdf#page1"><div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Hubberman et al. (2021)</div></Link>
+						<Link href="https://arxiv.org/pdf/2001.08361.pdf#page1"><div className="bg-slate-200 px-2 text-[16px] rounded-lg flex items-center whitespace-nowrap  w-fit gap-2 h-[40px]"><Paperclip size={15}/>Attla et al. (2022)</div></Link>
 					</div>
 				</div>
 
 				<div className="mt-5 bg-white/80 p-3 rounded-lg">
 					<div className="text-left px-2 w-full flex gap-2 items-center text-[20px]"><SparklesIcon size={20}/>Quick Overview</div>
 					<div className="mt-3 text-[14px]">
-					Transformative Technology: AI is a leading technology of the 21st century, impacting sectors like healthcare, finance, and transportation.
-<br /><br />Research Methodology: The study combines literature reviews, case studies, and expert interviews to assess AIs applications and implications.
-<br /><br />Sectoral Applications: Key uses of AI include diagnostic tools in healthcare, automated trading in finance, and autonomous vehicles in transportation.
-<br /><br />Ethical Challenges: The adoption of AI raises significant ethical concerns, including privacy issues, job displacement, and the need for unbiased systems.
-<br /><br />Future Direction: Ongoing research is essential to understand AIs long-term societal implications and establish frameworks for its ethical use.
+					Overview of "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?"
+					<br/><br/>
+					Authors: Ronen Eldan and Yuanzhi Li, Microsoft Research.
+					<br/><br/>
+					Publication Date: April 2023.
+					<br/><br/>
+					Key Contributions:
+					<br/><br/>
+					TinyStories Dataset: Introduces a synthetic dataset comprising short stories with vocabulary suitable for 3-4 year olds, generated by advanced models (GPT-3.5 and GPT-4).
+					<br/><br/>
+					Small Language Models (SLMs): Demonstrates that small models (under 10 million parameters) can produce coherent stories comparable to larger models, showing fluent and consistent text.
+					<br/><br/>
+					Interpretability: SLMs trained on TinyStories show higher interpretability with clear attention patterns and meaningful activation in simpler architectures.
+					<br/>
+					Findings:
+					<br/><br/>
+					SLMs trained on TinyStories can exhibit reasoning capabilities and follow instructions despite their small size.
+					Trained models demonstrate behaviors similar to larger-language models, such as scaling laws and architecture trade-offs.
+					Visualization of attention and activation patterns aids in understanding story generation and comprehension by the models.
 					</div>
 				</div>
 			</div>
